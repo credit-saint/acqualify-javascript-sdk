@@ -30,7 +30,7 @@ https://github.com/credit-saint/acqualify-javascript-sdk
 then install it via:
 
 ```shell
-    npm install credit-saint/acqualify-javascript-sdk --save
+npm install credit-saint/acqualify-javascript-sdk --save
 ```
 
 ### For browser
