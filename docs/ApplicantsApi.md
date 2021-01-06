@@ -1,14 +1,15 @@
-# AcqualifyApiDocumentation.ApplicantsApi
+# ApiDocumentation.ApplicantsApi
 
-All URIs are relative to */*
+All URIs are relative to *https://localhost/api/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**lookupApplicant**](ApplicantsApi.md#lookupApplicant) | **GET** /api/v1/lookup-applicant | Returns public information about a loan applicant
+[**lookupApplicant**](ApplicantsApi.md#lookupApplicant) | **GET** /lookup-applicant | Returns public information about a loan applicant
+
 
 <a name="lookupApplicant"></a>
 # **lookupApplicant**
-> InlineResponse200 lookupApplicant(firstName, lastName, addrLine1, city, state, zip, dob, opts)
+> lookupApplicant(firstName, lastName, addrLine1, city, state, zip, dob, opts)
 
 Returns public information about a loan applicant
 
@@ -16,57 +17,67 @@ See publicly available financial info about a loan applicant including credit sc
 
 ### Example
 ```javascript
-import AcqualifyApiDocumentation from 'acqualify_api_documentation';
-let defaultClient = AcqualifyApiDocumentation.ApiClient.instance;
+var ApiDocumentation = require('api_documentation');
+var defaultClient = ApiDocumentation.ApiClient.instance;
 
 // Configure API key authorization: bearer_token
-let bearer_token = defaultClient.authentications['bearer_token'];
+var bearer_token = defaultClient.authentications['bearer_token'];
 bearer_token.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //bearer_token.apiKeyPrefix = 'Token';
 
-let apiInstance = new AcqualifyApiDocumentation.ApplicantsApi();
-let firstName = new AcqualifyApiDocumentation.FirstName(); // FirstName | Applicant first name
-let lastName = new AcqualifyApiDocumentation.LastName(); // LastName | Applicant last name
-let addrLine1 = new AcqualifyApiDocumentation.AddrLine1(); // AddrLine1 | Address line 1
-let city = new AcqualifyApiDocumentation.City(); // City | City
-let state = new AcqualifyApiDocumentation.State(); // State | State (2-letter abbreviation)
-let zip = new AcqualifyApiDocumentation.Zip(); // Zip | Zip code
-let dob = new AcqualifyApiDocumentation.Dob(); // Dob | Date of birth (MM/DD/YYYY)
-let opts = { 
-  'addrLine2': new AcqualifyApiDocumentation.AddrLine2(), // AddrLine2 | Address line 2
-  'email': new AcqualifyApiDocumentation.Email(), // Email | Applicant email address
-  'phoneNumber': new AcqualifyApiDocumentation.PhoneNumber(), // PhoneNumber | Phone number
-  'loanAmount': new AcqualifyApiDocumentation.LoanAmount() // LoanAmount | Loan amount
+var apiInstance = new ApiDocumentation.ApplicantsApi();
+
+var firstName = "firstName_example"; // String | Applicant first name
+
+var lastName = "lastName_example"; // String | Applicant last name
+
+var addrLine1 = "addrLine1_example"; // String | Address line 1
+
+var city = "city_example"; // String | City
+
+var state = "state_example"; // String | State (2-letter abbreviation)
+
+var zip = 789; // Number | Zip code
+
+var dob = "dob_example"; // String | Date of birth (MM/DD/YYYY)
+
+var opts = { 
+  'addrLine2': "addrLine2_example", // String | Address line 2
+  'email': "email_example", // String | Applicant email address
+  'phoneNumber': "phoneNumber_example", // String | Phone number
+  'loanAmount': "loanAmount_example" // String | Loan amount
 };
-apiInstance.lookupApplicant(firstName, lastName, addrLine1, city, state, zip, dob, opts, (error, data, response) => {
+
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully. Returned data: ' + data);
+    console.log('API called successfully.');
   }
-});
+};
+apiInstance.lookupApplicant(firstName, lastName, addrLine1, city, state, zip, dob, opts, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **firstName** | [**FirstName**](.md)| Applicant first name | 
- **lastName** | [**LastName**](.md)| Applicant last name | 
- **addrLine1** | [**AddrLine1**](.md)| Address line 1 | 
- **city** | [**City**](.md)| City | 
- **state** | [**State**](.md)| State (2-letter abbreviation) | 
- **zip** | [**Zip**](.md)| Zip code | 
- **dob** | [**Dob**](.md)| Date of birth (MM/DD/YYYY) | 
- **addrLine2** | [**AddrLine2**](.md)| Address line 2 | [optional] 
- **email** | [**Email**](.md)| Applicant email address | [optional] 
- **phoneNumber** | [**PhoneNumber**](.md)| Phone number | [optional] 
- **loanAmount** | [**LoanAmount**](.md)| Loan amount | [optional] 
+ **firstName** | **String**| Applicant first name | 
+ **lastName** | **String**| Applicant last name | 
+ **addrLine1** | **String**| Address line 1 | 
+ **city** | **String**| City | 
+ **state** | **String**| State (2-letter abbreviation) | 
+ **zip** | **Number**| Zip code | 
+ **dob** | **String**| Date of birth (MM/DD/YYYY) | 
+ **addrLine2** | **String**| Address line 2 | [optional] 
+ **email** | **String**| Applicant email address | [optional] 
+ **phoneNumber** | **String**| Phone number | [optional] 
+ **loanAmount** | **String**| Loan amount | [optional] 
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+null (empty response body)
 
 ### Authorization
 
@@ -74,6 +85,6 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Content-Type**: application/json, application/xml
+ - **Accept**: application/xml, application/json
 
