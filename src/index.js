@@ -1,6 +1,6 @@
 /*
- * API Documentation
- * This is a sample server Petstore server.  You can find out more about     Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).      For this sample, you can use the api key `special-key` to test the authorization     filters.
+ * Acqualify API Documentation
+ * The Acqualify API provides services to mortgage brokers and realtors to help applicants qualify for loans.
  *
  * OpenAPI spec version: 1.0.0
  * Contact: info@creditsaint.com
@@ -26,14 +26,14 @@
   'use strict';
 
   /**
-   * This_is_a_sample_server_Petstore_server___You_can_find_out_more_about_____Swagger_at__httpswagger_io_httpswagger_io_or_on__irc_freenode_net_swagger_httpswagger_ioirc_______For_this_sample_you_can_use_the_api_key_special_key_to_test_the_authorization_____filters_.<br>
+   * The_Acqualify_API_provides_services_to_mortgage_brokers_and_realtors_to_help_applicants_qualify_for_loans_.<br>
    * The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
    * <p>
    * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
    * <pre>
-   * var ApiDocumentation = require('index'); // See note below*.
-   * var xxxSvc = new ApiDocumentation.XxxApi(); // Allocate the API class we're going to use.
-   * var yyyModel = new ApiDocumentation.Yyy(); // Construct a model instance.
+   * var AcqualifyApiDocumentation = require('index'); // See note below*.
+   * var xxxSvc = new AcqualifyApiDocumentation.XxxApi(); // Allocate the API class we're going to use.
+   * var yyyModel = new AcqualifyApiDocumentation.Yyy(); // Construct a model instance.
    * yyyModel.someProperty = 'someValue';
    * ...
    * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -45,8 +45,8 @@
    * <p>
    * A non-AMD browser application (discouraged) might do something like this:
    * <pre>
-   * var xxxSvc = new ApiDocumentation.XxxApi(); // Allocate the API class we're going to use.
-   * var yyy = new ApiDocumentation.Yyy(); // Construct a model instance.
+   * var xxxSvc = new AcqualifyApiDocumentation.XxxApi(); // Allocate the API class we're going to use.
+   * var yyy = new AcqualifyApiDocumentation.Yyy(); // Construct a model instance.
    * yyyModel.someProperty = 'someValue';
    * ...
    * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.

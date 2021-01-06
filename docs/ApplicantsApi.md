@@ -1,4 +1,4 @@
-# ApiDocumentation.ApplicantsApi
+# AcqualifyApiDocumentation.ApplicantsApi
 
 All URIs are relative to *https://localhost/api/v1*
 
@@ -17,8 +17,8 @@ See publicly available financial info about a loan applicant including credit sc
 
 ### Example
 ```javascript
-var ApiDocumentation = require('api_documentation');
-var defaultClient = ApiDocumentation.ApiClient.instance;
+var AcqualifyApiDocumentation = require('acqualify_api_documentation');
+var defaultClient = AcqualifyApiDocumentation.ApiClient.instance;
 
 // Configure API key authorization: bearer_token
 var bearer_token = defaultClient.authentications['bearer_token'];
@@ -26,7 +26,7 @@ bearer_token.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //bearer_token.apiKeyPrefix = 'Token';
 
-var apiInstance = new ApiDocumentation.ApplicantsApi();
+var apiInstance = new AcqualifyApiDocumentation.ApplicantsApi();
 
 var firstName = "firstName_example"; // String | Applicant first name
 

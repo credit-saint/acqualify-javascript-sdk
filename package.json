@@ -1,7 +1,7 @@
 {
-  "name": "api_documentation",
+  "name": "acqualify_api_documentation",
   "version": "1.0.0",
-  "description": "This_is_a_sample_server_Petstore_server___You_can_find_out_more_about_____Swagger_at__httpswagger_io_httpswagger_io_or_on__irc_freenode_net_swagger_httpswagger_ioirc_______For_this_sample_you_can_use_the_api_key_special_key_to_test_the_authorization_____filters_",
+  "description": "The_Acqualify_API_provides_services_to_mortgage_brokers_and_realtors_to_help_applicants_qualify_for_loans_",
   "license": "Apache 2.0",
   "main": "src/index.js",
   "scripts": {

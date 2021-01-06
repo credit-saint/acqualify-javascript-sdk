@@ -1,6 +1,6 @@
 /*
- * API Documentation
- * This is a sample server Petstore server.  You can find out more about     Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).      For this sample, you can use the api key `special-key` to test the authorization     filters.
+ * Acqualify API Documentation
+ * The Acqualify API provides services to mortgage brokers and realtors to help applicants qualify for loans.
  *
  * OpenAPI spec version: 1.0.0
  * Contact: info@creditsaint.com
@@ -23,10 +23,10 @@
     module.exports = factory(require('superagent'), require('querystring'));
   } else {
     // Browser globals (root is window)
-    if (!root.ApiDocumentation) {
-      root.ApiDocumentation = {};
+    if (!root.AcqualifyApiDocumentation) {
+      root.AcqualifyApiDocumentation = {};
     }
-    root.ApiDocumentation.ApiClient = factory(root.superagent, root.querystring);
+    root.AcqualifyApiDocumentation.ApiClient = factory(root.superagent, root.querystring);
   }
 }(this, function(superagent, querystring) {
   'use strict';
@@ -305,11 +305,7 @@
         case 'apiKey':
           if (auth.apiKey) {
             var data = {};
-            if (auth.apiKeyPrefix) {
-              data[auth.name] = auth.apiKeyPrefix + ' ' + auth.apiKey;
-            } else {
-              data[auth.name] = auth.apiKey;
-            }
+            data[auth.name] = 'Bearer ' + auth.apiKey;
             if (auth['in'] === 'header') {
               request.set(data);
             } else {
