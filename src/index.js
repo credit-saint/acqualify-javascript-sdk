@@ -1,5 +1,5 @@
 /**
- * API Documentation
+ * Acqualify API Documentation
  * The Acqualify API provides services to mortgage brokers and realtors to help applicants qualify for loans.
  *
  * OpenAPI spec version: 1.0.0
@@ -32,9 +32,9 @@ import ApplicantsApi from './api/ApplicantsApi';
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
 * <pre>
-* var ApiDocumentation = require('index'); // See note below*.
-* var xxxSvc = new ApiDocumentation.XxxApi(); // Allocate the API class we're going to use.
-* var yyyModel = new ApiDocumentation.Yyy(); // Construct a model instance.
+* var AcqualifyApiDocumentation = require('index'); // See note below*.
+* var xxxSvc = new AcqualifyApiDocumentation.XxxApi(); // Allocate the API class we're going to use.
+* var yyyModel = new AcqualifyApiDocumentation.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -46,8 +46,8 @@ import ApplicantsApi from './api/ApplicantsApi';
 * <p>
 * A non-AMD browser application (discouraged) might do something like this:
 * <pre>
-* var xxxSvc = new ApiDocumentation.XxxApi(); // Allocate the API class we're going to use.
-* var yyy = new ApiDocumentation.Yyy(); // Construct a model instance.
+* var xxxSvc = new AcqualifyApiDocumentation.XxxApi(); // Allocate the API class we're going to use.
+* var yyy = new AcqualifyApiDocumentation.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.

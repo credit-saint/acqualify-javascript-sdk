@@ -1,4 +1,4 @@
-# ApiDocumentation.Zip
+# AcqualifyApiDocumentation.Zip
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,5 +1,5 @@
 /**
- * API Documentation
+ * Acqualify API Documentation
  * The Acqualify API provides services to mortgage brokers and realtors to help applicants qualify for loans.
  *
  * OpenAPI spec version: 1.0.0
@@ -19,15 +19,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ApiDocumentation);
+    factory(root.expect, root.AcqualifyApiDocumentation);
   }
-}(this, function(expect, ApiDocumentation) {
+}(this, function(expect, AcqualifyApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ApiDocumentation.Dob();
+    instance = new AcqualifyApiDocumentation.Dob();
   });
 
   var getProperty = function(object, getter, property) {
@@ -49,13 +49,13 @@
   describe('Dob', function() {
     it('should create an instance of Dob', function() {
       // uncomment below and update the code to test Dob
-      //var instane = new ApiDocumentation.Dob();
-      //expect(instance).to.be.a(ApiDocumentation.Dob);
+      //var instane = new AcqualifyApiDocumentation.Dob();
+      //expect(instance).to.be.a(AcqualifyApiDocumentation.Dob);
     });
 
     it('should have the property dob (base name: "dob")', function() {
       // uncomment below and update the code to test the property dob
-      //var instane = new ApiDocumentation.Dob();
+      //var instane = new AcqualifyApiDocumentation.Dob();
       //expect(instance).to.be();
     });
 

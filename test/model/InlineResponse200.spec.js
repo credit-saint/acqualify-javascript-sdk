@@ -1,5 +1,5 @@
 /**
- * API Documentation
+ * Acqualify API Documentation
  * The Acqualify API provides services to mortgage brokers and realtors to help applicants qualify for loans.
  *
  * OpenAPI spec version: 1.0.0
@@ -19,15 +19,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ApiDocumentation);
+    factory(root.expect, root.AcqualifyApiDocumentation);
   }
-}(this, function(expect, ApiDocumentation) {
+}(this, function(expect, AcqualifyApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ApiDocumentation.InlineResponse200();
+    instance = new AcqualifyApiDocumentation.InlineResponse200();
   });
 
   var getProperty = function(object, getter, property) {
@@ -49,25 +49,25 @@
   describe('InlineResponse200', function() {
     it('should create an instance of InlineResponse200', function() {
       // uncomment below and update the code to test InlineResponse200
-      //var instane = new ApiDocumentation.InlineResponse200();
-      //expect(instance).to.be.a(ApiDocumentation.InlineResponse200);
+      //var instane = new AcqualifyApiDocumentation.InlineResponse200();
+      //expect(instance).to.be.a(AcqualifyApiDocumentation.InlineResponse200);
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instane = new ApiDocumentation.InlineResponse200();
+      //var instane = new AcqualifyApiDocumentation.InlineResponse200();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instane = new ApiDocumentation.InlineResponse200();
+      //var instane = new AcqualifyApiDocumentation.InlineResponse200();
       //expect(instance).to.be();
     });
 
     it('should have the property applicant (base name: "applicant")', function() {
       // uncomment below and update the code to test the property applicant
-      //var instane = new ApiDocumentation.InlineResponse200();
+      //var instane = new AcqualifyApiDocumentation.InlineResponse200();
       //expect(instance).to.be();
     });
 

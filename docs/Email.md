@@ -1,4 +1,4 @@
-# ApiDocumentation.Email
+# AcqualifyApiDocumentation.Email
 
 ## Properties
 Name | Type | Description | Notes

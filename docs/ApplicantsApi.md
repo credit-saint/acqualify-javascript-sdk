@@ -1,4 +1,4 @@
-# ApiDocumentation.ApplicantsApi
+# AcqualifyApiDocumentation.ApplicantsApi
 
 All URIs are relative to */*
 
@@ -16,8 +16,8 @@ See publicly available financial info about a loan applicant including credit sc
 
 ### Example
 ```javascript
-import ApiDocumentation from 'api_documentation';
-let defaultClient = ApiDocumentation.ApiClient.instance;
+import AcqualifyApiDocumentation from 'acqualify_api_documentation';
+let defaultClient = AcqualifyApiDocumentation.ApiClient.instance;
 
 // Configure API key authorization: bearer_token
 let bearer_token = defaultClient.authentications['bearer_token'];
@@ -25,19 +25,19 @@ bearer_token.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //bearer_token.apiKeyPrefix = 'Token';
 
-let apiInstance = new ApiDocumentation.ApplicantsApi();
-let firstName = new ApiDocumentation.FirstName(); // FirstName | Applicant first name
-let lastName = new ApiDocumentation.LastName(); // LastName | Applicant last name
-let addrLine1 = new ApiDocumentation.AddrLine1(); // AddrLine1 | Address line 1
-let city = new ApiDocumentation.City(); // City | City
-let state = new ApiDocumentation.State(); // State | State (2-letter abbreviation)
-let zip = new ApiDocumentation.Zip(); // Zip | Zip code
-let dob = new ApiDocumentation.Dob(); // Dob | Date of birth (MM/DD/YYYY)
+let apiInstance = new AcqualifyApiDocumentation.ApplicantsApi();
+let firstName = new AcqualifyApiDocumentation.FirstName(); // FirstName | Applicant first name
+let lastName = new AcqualifyApiDocumentation.LastName(); // LastName | Applicant last name
+let addrLine1 = new AcqualifyApiDocumentation.AddrLine1(); // AddrLine1 | Address line 1
+let city = new AcqualifyApiDocumentation.City(); // City | City
+let state = new AcqualifyApiDocumentation.State(); // State | State (2-letter abbreviation)
+let zip = new AcqualifyApiDocumentation.Zip(); // Zip | Zip code
+let dob = new AcqualifyApiDocumentation.Dob(); // Dob | Date of birth (MM/DD/YYYY)
 let opts = { 
-  'addrLine2': new ApiDocumentation.AddrLine2(), // AddrLine2 | Address line 2
-  'email': new ApiDocumentation.Email(), // Email | Applicant email address
-  'phoneNumber': new ApiDocumentation.PhoneNumber(), // PhoneNumber | Phone number
-  'loanAmount': new ApiDocumentation.LoanAmount() // LoanAmount | Loan amount
+  'addrLine2': new AcqualifyApiDocumentation.AddrLine2(), // AddrLine2 | Address line 2
+  'email': new AcqualifyApiDocumentation.Email(), // Email | Applicant email address
+  'phoneNumber': new AcqualifyApiDocumentation.PhoneNumber(), // PhoneNumber | Phone number
+  'loanAmount': new AcqualifyApiDocumentation.LoanAmount() // LoanAmount | Loan amount
 };
 apiInstance.lookupApplicant(firstName, lastName, addrLine1, city, state, zip, dob, opts, (error, data, response) => {
   if (error) {

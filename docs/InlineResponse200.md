@@ -1,4 +1,4 @@
-# ApiDocumentation.InlineResponse200
+# AcqualifyApiDocumentation.InlineResponse200
 
 ## Properties
 Name | Type | Description | Notes

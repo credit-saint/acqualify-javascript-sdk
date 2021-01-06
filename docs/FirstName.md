@@ -1,4 +1,4 @@
-# ApiDocumentation.FirstName
+# AcqualifyApiDocumentation.FirstName
 
 ## Properties
 Name | Type | Description | Notes
